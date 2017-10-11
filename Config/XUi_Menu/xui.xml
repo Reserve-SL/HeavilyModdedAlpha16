@@ -1,0 +1,42 @@
+<xui><!-- R.E. LXIX --> <!--\7 Days To Die\Config\Xui_Menu\xui.xml-->
+	<ruleset name="default" scale="1.255" stackpanel_scale="1.05">
+	
+		<window_group name="toolTip" actionSet="false">
+			<window name="toolTip" />
+			<window name="popupMenu" />
+		</window_group>
+		
+		<window_group name="profiles">
+			<window name="windowArchetypePreview"/>
+		</window_group>
+		
+		<window_group name="archetypes" controller="XUiC_ArchetypesWindowGroup" stack_panel_y_offset="332">
+			<window name="windowArchetypePreview2"/>
+			<window name="windowSliders"/>
+			<window name="windowColorPicker"/>
+		</window_group>
+		
+		<!--#$-IGS BEGIN: Adding window to hold gampad callouts -$#-->
+		<window_group name="CalloutGroup"  actionSet="false">
+			<window name="GamepadCallouts" />
+		</window_group>
+		<!--*#$-IGS END.-$#-->
+
+		<window_group name="rwgeditor" controller="XUiC_RWGEditorWindowGroup">
+<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) -->
+  <!-- On the below line select the RWG Preview Window Layout you want to use - 7DTD Default = windowRWGPreview - RELXIX HUD = windowRWGPreviewer -->
+			<window name="windowRWGPreviewer" />  <!-- windowRWGPreviewer (RELXIX HUD) or windowRWGPreview (7DTD Default) -->
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) -->
+			<!--<window name="windowRWGPoiList" />-->
+			<!--<window name="windowRWGLSystem" />-->
+		</window_group>
+		
+		<window_group name="messageBox" controller="MessageBoxWindowGroup">
+			<window name="messageBox" />
+		</window_group>
+		
+		<window_group name="createWorld" controller="CreateWorld">
+			<window name="createWorld" />
+		</window_group>
+	</ruleset>
+</xui>
